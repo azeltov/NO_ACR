@@ -1,0 +1,16 @@
+azureuser@cids12:/mnt/batch/tasks/shared/LS_root/mounts/clusters/cids12/code/Users/alzeltov/NO_ACR$ docker tag myenv externalacr.azurecr.io/myenv:1
+azureuser@cids12:/mnt/batch/tasks/shared/LS_root/mounts/clusters/cids12/code/Users/alzeltov/NO_ACR$ docker images
+REPOSITORY                                                            TAG       IMAGE ID       CREATED       SIZE
+myenv                                                                 latest    bf46ba9fb5ec   2 hours ago   3.74GB
+externalacr.azurecr.io/myenv                                          1         bf46ba9fb5ec   2 hours ago   3.74GB
+azureml/azureml_3431f4228f5f4df121a024158087aefd                      latest    bf46ba9fb5ec   2 hours ago   3.74GB
+azeltov/azureml-scikit                                                0.0.1     fa3f6907517f   4 hours ago   2.23GB
+<none>                                                                <none>    d7e7886e61f7   4 hours ago   10.3GB
+ghcr.io/azure/c3                                                      latest    2314459b1d85   6 hours ago   20MB
+mcr.microsoft.com/azureml/curated/sklearn-0.24-ubuntu18.04-py37-cpu   33        1943cca17472   7 days ago    2.17GB
+mcr.microsoft.com/azureml/openmpi4.1.0-cuda11.1-cudnn8-ubuntu18.04    latest    35ef7f3a1251   8 days ago    10.3GB
+azureuser@cids12:/mnt/batch/tasks/shared/LS_root/mounts/clusters/cids12/code/Users/alzeltov/NO_ACR$ docker push externalacr.azurecr.io/myenv:1
+The push refers to repository [externalacr.azurecr.io/myenv]
+5209ea1bcb0e: Pushed 
+f28db34c9dac: Pushed 
+c45882fe1dc2: Pushing [==============>                                    ]    437MB/1.511GB
